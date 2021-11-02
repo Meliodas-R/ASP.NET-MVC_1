@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @{
+            for (int i = 1; i <= ViewBag.NumeroVeces; i++)
+            {
+                @*<p>Bienvenidos a ASP.NET MVC (Controlador y vista) @i</p>*@
+                <p>@ViewBag.mensaje @i</p>
+                //https://localhost:44328/Home/Index?Numero=3&Mensaje=aaaa
+            }
+        }
+    </div>
+</body>
+</html>
